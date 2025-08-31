@@ -2,19 +2,19 @@
 <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560.47 824.2">
   <defs>
     <style>
-      .cls-1 {
+      .ventanita-tangerine1 {
         fill: #00274e;
       }
 
-      .cls-1, .cls-2 {
+      .ventanita-tangerine1, .ventanita-tangerine2 {
         stroke-width: 0px;
       }
 
-      .cls-2 {
+      .ventanita-tangerine2 {
         fill: #fff;
       }
 
-      .cls-3 {
+      .ventanita-tangerine3 {
         fill: none;
         stroke: #ffc7b7;
         stroke-linecap: round;
@@ -23,17 +23,17 @@
       }
     </style>
   </defs>
-  <path class="cls-1" d="m517.47,19.8H247.33h188.62H42.99c-12.7,0-23,10.3-23,23v38.3h415.95-188.62,293.15v-38.3c0-12.7-10.3-23-23-23Z"/>
-  <path class="cls-2" d="m430.67,81.09H105.96h86.23H20v700.32c0,12.7,10.3,23,23,23h190.16-99.57,344.3-37.21,76.79c12.7,0,23-10.3,23-23V81.09h-109.81Z"/>
+  <path class="ventanita-tangerine1" d="m517.47,19.8H247.33h188.62H42.99c-12.7,0-23,10.3-23,23v38.3h415.95-188.62,293.15v-38.3c0-12.7-10.3-23-23-23Z"/>
+  <path class="ventanita-tangerine2" d="m430.67,81.09H105.96h86.23H20v700.32c0,12.7,10.3,23,23,23h190.16-99.57,344.3-37.21,76.79c12.7,0,23-10.3,23-23V81.09h-109.81Z"/>
   <g>
-    <polyline class="cls-3" points="19.99 81.1 435.95 81.1 247.33 81.1 481.08 81.1 540.47 81.1"/>
+    <polyline class="ventanita-tangerine3" points="19.99 81.1 435.95 81.1 247.33 81.1 481.08 81.1 540.47 81.1"/>
     <g>
-      <circle class="cls-3" cx="53.71" cy="49.72" r="10.57"/>
-      <circle class="cls-3" cx="90.8" cy="49.72" r="10.57"/>
-      <circle class="cls-3" cx="127.47" cy="49.72" r="10.57"/>
+      <circle class="ventanita-tangerine3" cx="53.71" cy="49.72" r="10.57"/>
+      <circle class="ventanita-tangerine3" cx="90.8" cy="49.72" r="10.57"/>
+      <circle class="ventanita-tangerine3" cx="127.47" cy="49.72" r="10.57"/>
       <g>
-        <line class="cls-3" x1="501.55" y1="40.42" x2="518.35" y2="57.23"/>
-        <line class="cls-3" x1="518.35" y1="40.42" x2="501.55" y2="57.23"/>
+        <line class="ventanita-tangerine3" x1="501.55" y1="40.42" x2="518.35" y2="57.23"/>
+        <line class="ventanita-tangerine3" x1="518.35" y1="40.42" x2="501.55" y2="57.23"/>
       </g>
     </g>
   </g>

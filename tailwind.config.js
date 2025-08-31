@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./index.html",
@@ -12,9 +11,9 @@ export default {
         'yellow': '#F4D47D',
         'blue-strong': '#00274E',
         'orange-thiny': '#FFC6B6',
-      }
+      },
+      
     },
   },
   plugins: [],
-}
-
+};

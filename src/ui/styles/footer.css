@@ -1,9 +1,10 @@
 footer{
     background-image: url(../../assets/fondo-azul-tangerine.jpg);
+    background-size: cover;
 }
 .iconTangerineFooter{
     transform: scale(2.5);
     position: absolute;
-    right: 14rem;
+    right: 150px;
     top: -2rem;
 }

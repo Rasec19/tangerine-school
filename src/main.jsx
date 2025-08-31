@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import TangerineApp from './TangerineApp.jsx'
 import './index.css'
+import '../font/font-neuwelt.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

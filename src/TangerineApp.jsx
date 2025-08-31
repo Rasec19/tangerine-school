@@ -1,5 +1,4 @@
 
-import React from 'react'
 import { HomePage } from './home/pages/HomePage'
 import { Footer, Navbar } from './ui/index'
 
