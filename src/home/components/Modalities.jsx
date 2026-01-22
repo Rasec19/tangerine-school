@@ -1,27 +1,36 @@
-import { ModalitiesCard } from "./ModalitiesCard";
-import WaveRose from "../../assets/waves/wave-orange-thiny.svg?react";
+import Note from '../../assets/nota-tangerine.png';
+import Note2 from '../../assets/nota-tangerine2.png';
+import Note3 from '../../assets/nota-tangerine3.png';
 
 export const Modalities = () => {
   return (
     <>
-      <article className='bg-rose-thiny px-10 py-40' id='modalities'>
-      <div className="grid grid-cols-12">
-        <div className="col-start-6 col-end-9">
-            <h3 id="title" className="text-orange text-6xl w-full font-bold">
-                Modalidades
-            </h3>
-        </div>
-        <div className="col-start-4 col-end-10 mt-3 mb-10">
-            <p id="paragraph" className="w-full text-blue-strong text-2xl font-semibold text-center">
+      <article className="bg-rose-thiny px-4 sm:px-8 md:px-16 py-24" id="modalities">
+        <div className="w-full flex flex-col items-center gap-6 text-center" >
+          <h3 id="title" className="text-orange text-4xl md:text-5xl lg:text-6xl font-extrabold">
+            Modalidades
+          </h3>
+          <p
+            id="paragraph"
+            className="text-blue-strong text-lg md:text-xl lg:text-2xl font-medium sm:px-0 px-4"
+          >
             Tenemos tres modalidades diferentes para que elijas la que más te convenga:
-            </p>
+          </p>
         </div>
-        <ModalitiesCard title={'12 Horas mensuales'} paragraph={'(3 hrs a la semana o sabatino)'} />
-        <ModalitiesCard title={'16 Horas mensuales'} paragraph={'(4 hrs a la semana)'} />
-        <ModalitiesCard title={'20 Horas mensuales'} paragraph={'(5 hrs a la semana)'} />
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:mt-12 mt-2" >
+          <div className="w-full flex flex-col items-center justify-center">
+            <img className="card-spin" src={Note} alt="Modalidad 12 horas" loading="lazy" />
+          </div>
+          <div className="w-full flex flex-col items-center justify-center">
+            <img className="card-spin" src={Note2} alt="Modalidad 16 horas" loading="lazy" />
+          </div>
+          <div className="w-full flex flex-col items-center justify-center">
+            <img className="card-spin" src={Note3} alt="Modalidad 20 horas" loading="lazy" />
+          </div>
         </div>
       </article>
-      <WaveRose className="waveRose" />
+
     </>
-  )
-}
+  );
+};

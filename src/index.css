@@ -1,7 +1,58 @@
+@font-face {
+    font-family: 'Neuwelt';
+    src: url('./assets/font/Neuwelt-Regular.ttf') format('truetype'),
+        url('./assets/font/Neuwelt-Regular.woff2') format('woff2'),
+        url('./assets/font/Neuwelt-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Neuwelt';
+    src: url('./assets/font/Neuwelt-Bold.ttf') format('truetype'),
+        url('./assets/font/Neuwelt-Bold.woff2') format('woff2'),
+        url('./assets/font/Neuwelt-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neuwelt';
+    src: url('./assets/font/Neuwelt-Black.ttf') format('truetype'),
+        url('./assets/font/Neuwelt-Black.woff2') format('woff2'),
+        url('./assets/font/Neuwelt-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neuwelt';
+    src: url('./assets/font/Neuwelt-Medium.ttf') format('truetype'),
+        url('./assets/font/Neuwelt-Medium.woff2') format('woff2'),
+        url('./assets/font/Neuwelt-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neuwelt';
+    src: url('./assets/font/Neuwelt-ExtraBold.ttf') format('truetype'),
+        url('./assets/font/Neuwelt-ExtraBold.woff2') format('woff2'),
+        url('./assets/font/Neuwelt-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-    font-family: 'FF Neuwelt';
+    font-family: Neuwelt, sans-serif;
 }

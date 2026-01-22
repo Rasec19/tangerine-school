@@ -1,16 +1,68 @@
-#students-opinions{
-    background-image: url(../../assets/fondo-rosa-tangerine.jpg);
-    background-size: cover;
+#students-opinions {
+  background-image: url(../../assets/fondo-rosa-tangerine.webp);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
+
+/* Wave Top */
+/* #students-opinions::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  clip-path: path("M0,10 C 60,40 1280,80 2240,0 L1440,0 L0,0 Z");background-color: #FEF3ED;
+  background-size: cover;
+  z-index: -1;
+}
+
+
+#students-opinions::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(244 212 125 / var(--tw-bg-opacity));
+  clip-path: path("M0,10 C 60,40 1280,80 2240,0 L1440,0 L0,0 Z");
+  background-color: #00274E;
+  z-index: -1;
+  transform: rotate(180deg);
+}
+
+@media (max-width: 1024px) {
+  #students-opinions::before {
+    clip-path: path("M0,8 C 40,30 720,60 1024,0 L1024,0 L0,0 Z");
+  }
+
+  #students-opinions::after {
+    clip-path: path("M0,8 C 40,30 720,60 1024,0 L1024,0 L0,0 Z");
+  }
+}
+@media (max-width: 768px) {
+  #students-opinions::before {
+    height: 60px;
+    clip-path: path("M0,6 C 30,20 480,40 768,0 L768,0 L0,0 Z");
+  }
+
+  #students-opinions::after {
+    height: 60px;
+    clip-path: path("M0,6 C 30,20 480,40 768,0 L768,0 L0,0 Z");
+  }
+} */
 
 .iconTangerine {
     transform: scale(2.5);
-    right: 22rem;
+    right: -25px;
+    top: 5px;
     position: unset;
-}
-
-#home-section {
-    height: 45rem;
 }
 
 .tangerino {
@@ -19,6 +71,7 @@
     left: -18rem;
     right: 89rem;
     top: 15rem;
+    z-index: 100;
 }
 
 #white-shine, #orange-shine {
@@ -43,7 +96,7 @@
 }
 
 .cat-card-img {
-    height: 190%;
+    height: 140%;
     background-size: cover;
 }
 
@@ -78,13 +131,33 @@
     width: 100px;
 }
 
-@keyframes slide {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(-100%);
-    }
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  cursor: grab;
+}
+
+.slide-track {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+  animation: scroll 150s linear infinite;
+  animation-play-state: running;
+  transition: animation-play-state 0.3s easy-in-out;
+}
+
+.slider:hover .slide-track {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 #content{
@@ -96,7 +169,7 @@
 #content:before, #content:after {
     position: absolute;
     top: 0;
-    width: 150px;
+    width: 5%;
     height: 100%;
     content: "";
     z-index: 2;
@@ -116,21 +189,6 @@
     animation-play-state: paused;
 }
 
-.opinions-slide{
-    display: flex;
-}
-
-.opinions-content {
-    display: inline-block;
-    animation: 100s slide infinite linear;
-}
-
-.opinion-card {
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 600px;
-    height: 270px;
-}
 
 #opinion-text {
     text-wrap: wrap;
@@ -154,15 +212,124 @@
 
 .why-study-content-text-card {
     position: relative;
-    bottom: 28rem;
+    bottom: 24rem;
 }
 
-#our-method{
-    background-image: url(../../assets/fondo-azul-tangerine.jpg);
-    background-size: cover;
+.tangerine-window-container {
+    background-image: url('../../assets/ventanita-tangerine.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
 }
 
-/* #wave-blue-img{
-    background-image: url(../../assets/fondo-azul-tangerine.jpg);
-    background-size: cover;
+#our-method {
+  background-image: url(../../assets/fondo-azul-tangerine.webp);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1; 
+  overflow: hidden; 
+}
+
+/* Wave Top */
+/* #our-method::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(255 198 182 / var(--tw-bg-opacity));
+  clip-path: path("M0,10 C 60,40 1280,80 2240,0 L1440,0 L0,0 Z");
+  z-index: -1;
+}
+#our-method::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(244 212 125 / var(--tw-bg-opacity));
+  clip-path: path("M0,10 C 60,40 1280,80 2240,0 L1440,0 L0,0 Z");
+  z-index: -1;
+  transform: rotate(180deg);
+}
+
+@media (max-width: 1024px) {
+  #our-method::before {
+    clip-path: path("M0,8 C 40,30 720,60 1024,0 L1024,0 L0,0 Z");
+  }
+
+  #our-method::after {
+    clip-path: path("M0,8 C 40,30 720,60 1024,0 L1024,0 L0,0 Z");
+  }
+}
+
+@media (max-width: 768px) {
+  #our-method::before {
+    height: 60px;
+    clip-path: path("M0,6 C 30,20 480,40 768,0 L768,0 L0,0 Z");
+  }
+
+  #our-method::after {
+    height: 60px;
+    clip-path: path("M0,6 C 30,20 480,40 768,0 L768,0 L0,0 Z");
+  }
 } */
+
+
+
+
+
+.bubble-tail-left {
+    position: absolute;
+    left: -34px;
+    bottom: 0px;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-right: 35px solid #00274E; /* o tu color `blue-strong` */
+  }
+
+  .bubble-tail-left-opinions {
+    position: absolute;
+    left: -41px;
+    bottom: 0px;
+    width: 50px;
+    height: 10px;
+    border-top: 30px solid transparent;
+    border-bottom: 0px solid transparent;
+    border-right: 35px solid #FEF3ED; /* o tu color `blue-strong` */
+  }
+
+  @media screen and ( width = 540px ) {
+    .parraf {
+        padding-left: 80px !important;
+        padding-right: 80px !important;
+    }
+  }
+
+  @media (max-width: 545px) {
+    .why-card-content {
+        padding-left: 6rem !important;
+        padding-right: 6rem !important;
+    }
+  }
+  @media (max-width: 420px) {
+    .why-card-content {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+  }
+  @media (max-width: 325px) {
+    .why-card-content {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        padding-top: 4rem !important;
+        padding-bottom: 4rem !important;
+    }
+  }

@@ -18,12 +18,6 @@ export const comments = [
         from: 'CDMX',
     },
     {
-        id: 4,
-        comment: 'B DÍA Ricardo, me encantó su clase y su manera de enseñar.',
-        name: 'Armina',
-        from: 'Hermosillo, Sonora',
-    },
-    {
         id: 5,
         comment: 'Honestly, I have learned more in these 3 days in this class than in the previous 3 weeks! (in another school).',
         name: 'Ramón',
